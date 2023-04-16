@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    height: 120px;
+}
+
+/* NAVBAR */
+
+.nav__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.logo {
+    width: 100px;
+    filter: invert(1);
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link {
+    margin-left: 28px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav__link--anchor {
+    color: white;
+}
+
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect:after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav__link--btn {
+    color: rgb(25, 55, 109);
+    background-color: white;
+    padding: 12px 32px;
+    border-radius: 24px;
+    transition: all 300ms ease;
+}
+
+.nav__link--btn:hover {
+    background-color: rgb(98, 205, 255);
+    color: white;
+}
+
+
+
+#landing {
+    background-color: rgba(25, 55, 109, 0.70);
+    height: 25vh;
+}
