@@ -39,10 +39,10 @@
             <div class="header__container">
                 <h1 class="header__title">Browse our movies</h1>
                 <div class="input__wrapper">
-                    <input type="text" placeholder="Type a keyword">
-                    <div class="search__wrapper">
+                    <input id="input__field" type="text" placeholder="Type a keyword" onkeyup="clickInputButton(event)">
+                    <button id="input__btn" class="search__wrapper" onclick="getInput()">
                         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                    </div>
+                    </button>
                 </div>
             </div>    
     <div class="landing__overlay"></div>
@@ -54,72 +54,6 @@
                     <h1 class="search__title">Search results</h1>
                 </div>
                 <div class="movies-list">
-                    <div class="movie">
-                        <div class="movie-card">
-                            <div class="movie-card__container">
-                                <figure class="movie__img--container">
-                                    <img class="movie__img" src="https://i5.walmartimages.com/asr/e7e6cc47-6c82-49d0-80f7-4fc9516acb4d.84371bffd8ddba2b752e5a4712ee8499.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt="">
-                                </figure>
-                                <p class="movie__para"><b>Title:</b> Fast and Furious</p>
-                                <p class="movie__para"><b>Year:</b> 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movie">
-                        <div class="movie-card">
-                            <div class="movie-card__container">
-                                <figure class= "movie__img--container">
-                                    <img class="movie__img" src="https://i5.walmartimages.com/asr/e7e6cc47-6c82-49d0-80f7-4fc9516acb4d.84371bffd8ddba2b752e5a4712ee8499.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt="">
-                                </figure>
-                                <p class="movie__para"><b>Title:</b> Fast and Furious</p>
-                                <p class="movie__para"><b>Year:</b> 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movie">
-                        <div class="movie-card">
-                            <div class="movie-card__container">
-                                <figure class="movie__img--container">
-                                    <img class="movie__img" src="https://i5.walmartimages.com/asr/e7e6cc47-6c82-49d0-80f7-4fc9516acb4d.84371bffd8ddba2b752e5a4712ee8499.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt="">
-                                </figure>
-                                <p class="movie__para"><b>Title:</b> Fast and Furious</p>
-                                <p class="movie__para"><b>Year:</b> 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movie">
-                        <div class="movie-card">
-                            <div class="movie-card__container">
-                                <figure class="movie__img--container">
-                                    <img class="movie__img" src="https://i5.walmartimages.com/asr/e7e6cc47-6c82-49d0-80f7-4fc9516acb4d.84371bffd8ddba2b752e5a4712ee8499.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt="">
-                                </figure>
-                                <p class="movie__para"><b>Title:</b> Fast and Furious</p>
-                                <p class="movie__para"><b>Year:</b> 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movie">
-                        <div class="movie-card">
-                            <div class="movie-card__container">
-                                <figure class="movie__img--container">
-                                    <img class="movie__img" src="https://i5.walmartimages.com/asr/e7e6cc47-6c82-49d0-80f7-4fc9516acb4d.84371bffd8ddba2b752e5a4712ee8499.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt="">
-                                </figure>
-                                <p class="movie__para"><b>Title:</b> Fast and Furious</p>
-                                <p class="movie__para"><b>Year:</b> 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movie">
-                        <div class="movie-card">
-                            <div class="movie-card__container">
-                                <figure class="movie__img--container">
-                                    <img class="movie__img" src="https://i5.walmartimages.com/asr/e7e6cc47-6c82-49d0-80f7-4fc9516acb4d.84371bffd8ddba2b752e5a4712ee8499.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt="">
-                                </figure>
-                                <p class="movie__para"><b>Title:</b> Fast and Furious</p>
-                                <p class="movie__para"><b>Year:</b> 2020</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
