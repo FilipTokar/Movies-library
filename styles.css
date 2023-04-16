@@ -37,6 +37,17 @@ input {
 nav {
     height: 120px;
 }
+
+.container {
+    padding: 40px 20px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 #landing {
     height: 30vh;
 }
@@ -174,4 +185,65 @@ nav {
     bottom: 0;
     background-color: rgba(25, 55, 109, 0.8);
     pointer-events: none;
+}
+
+/* CARS */
+
+.search__container {
+    text-align: center;
+}
+
+.search__title {
+    color: rgb(25, 55, 109);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+
+.movie {
+    width: calc(100%/3);
+}
+
+.movie-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px 10px 20px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.movie-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.movie-card__container {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie__img--container {
+    display: flex;
+    text-align: center;
+    
+}
+.movie__img {
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.movie__para {
+    margin-top: 8px;
+    color: rgb(25, 55, 109);
 }
