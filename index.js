@@ -22,7 +22,7 @@ async function renderMovies() {
                 <figure class="movie__img--container">
                     <img class="movie__img" src="${movie.Poster}" alt="">
                 </figure>
-                <p class="movie__para"><b>Title:</b> ${movie.Title}</p>
+                <p class="movie__para"><b>Title:</b><br> ${movie.Title}</p>
                 <p class="movie__para"><b>Year:</b> ${movie.Year}</p>
             </div>
         </div>
@@ -35,7 +35,6 @@ function getMovies (apiRoute) {
         resolve(fetch(`https://www.omdbapi.com/?apikey=56cb40ec&s=${apiRoute}`, {
             referrerPolicy: "unsafe-url"
         }
-
         ))  
     })  
 }
