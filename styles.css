@@ -304,15 +304,19 @@ nav {
     }
 }
 
+@media (max-width:550px) {
+    .movie {
+        width: 100%;
+    }
+}
+
+
 @media (max-width:480px) {
     .header__title {
         font-size: 38px;
     }
     .input__wrapper {
         max-width: 400px;
-    }
-    .movie {
-        width: 100%;
     }
     .search__title {
         font-size: 24px;
