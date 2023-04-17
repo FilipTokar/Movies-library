@@ -48,6 +48,10 @@ nav {
     margin: 0 auto;
 }
 
+.no-click {
+    cursor: not-allowed;
+}
+
 #landing {
     height: 30vh;
 }
@@ -288,4 +292,34 @@ nav {
 .search__title--black {
     color: black;
     font-weight: 400;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width:768px) {
+    .movie {
+        width: calc(100%/2);
+    }
+    .input__wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (max-width:480px) {
+    .header__title {
+        font-size: 38px;
+    }
+    .input__wrapper {
+        max-width: 400px;
+    }
+    .movie {
+        width: 100%;
+    }
+    .search__title {
+        font-size: 24px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
 }

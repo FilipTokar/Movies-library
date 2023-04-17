@@ -1,4 +1,4 @@
-
+let movies
 
 async function renderMovies() {
     let input = document.querySelector("#input__field").value
@@ -7,7 +7,9 @@ async function renderMovies() {
     
     moviesListElement.classList += " movies__loading"
 
-    let movies = await getMovies(input)
+    if(!movies) {
+    movies = await getMovies(input)
+    }
     const moviesData = await movies.json()
     const firstSixMovies = moviesData.Search.slice(0,6)
 
