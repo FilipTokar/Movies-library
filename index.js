@@ -1,5 +1,3 @@
-let movies
-
 async function renderMovies() {
     let input = document.querySelector("#input__field").value
     const moviesListElement = document.querySelector(".movies-list")
@@ -7,15 +5,14 @@ async function renderMovies() {
     
     moviesListElement.classList += " movies__loading"
 
-    if(!movies) {
-    movies = await getMovies(input)
-    }
-    const moviesData = await movies.json()
-    const firstSixMovies = moviesData.Search.slice(0,6)
+    let movies = await getMovies(input)
+    let moviesData = await movies.json()
+    
+    let firstSixMovies = moviesData.Search.slice(0,6)
 
     moviesListElement.classList.remove("movies__loading")
     
-    searchTitleElement.innerHTML += ` for: <span class="search__title--black">${input}</span>`
+    searchTitleElement.innerHTML = `Search results for: <span class="search__title--black">${input}</span>`
     moviesListElement.innerHTML = firstSixMovies.map((movie) => movieHTML(movie)).join("")
 
     function movieHTML (movie) {
