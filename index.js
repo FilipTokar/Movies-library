@@ -35,7 +35,7 @@ async function renderMovies() {
 
 function getMovies (apiRoute) {
     return new Promise ((resolve) => {
-        resolve(fetch(`https://www.omdbapi.com/?apikey=56cb40ec&s=${apiRoute}`))  
+        resolve(fetch(`http://www.omdbapi.com/?apikey=56cb40ec&s=${apiRoute}`))  
     })  
 }
 
