@@ -241,6 +241,8 @@ nav {
 }
 .movie__img {
     height: 300px;
+    width: 100%;
+    max-width: 220px;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -248,4 +250,42 @@ nav {
 .movie__para {
     margin-top: 8px;
     color: rgb(25, 55, 109);
+}
+
+/* MOVIES LOADING */
+
+.movies__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    color: rgb(25, 55, 109);
+}
+
+
+.fa-spinner {
+    animation: rotate 500ms infinite linear;
+}
+
+.movies__loading--spinner{
+    display: none !important;
+}
+
+.movies__loading .movies__loading--spinner {
+    display: block !important;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.search__title--black {
+    color: black;
+    font-weight: 400;
 }

@@ -39,8 +39,8 @@
             <div class="header__container">
                 <h1 class="header__title">Browse our movies</h1>
                 <div class="input__wrapper">
-                    <input id="input__field" type="text" placeholder="Type a keyword" onkeyup="clickInputButton(event)">
-                    <button id="input__btn" class="search__wrapper" onclick="getInput()">
+                    <input id="input__field" type="text" placeholder="Type a movie related keyword " onkeyup="clickInputButton(event)">
+                    <button id="input__btn" class="search__wrapper" onclick="renderMovies()">
                         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
@@ -54,6 +54,7 @@
                     <h1 class="search__title">Search results</h1>
                 </div>
                 <div class="movies-list">
+                    <i class="fas fa-spinner movies__loading--spinner"></i>
                 </div>
             </div>
         </div>
