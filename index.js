@@ -3,6 +3,7 @@ async function renderMovies() {
     const moviesListElement = document.querySelector(".movies-list")
     const searchTitleElement = document.querySelector(".search__title")
     
+    moviesListElement.innerHTML = loadingStateHTML()
     moviesListElement.classList += " movies__loading"
 
     let movies = await getMovies(input)
@@ -27,6 +28,10 @@ async function renderMovies() {
             </div>
         </div>
     </div>`
+    }
+
+    function loadingStateHTML () {
+        return '<i class="fas fa-spinner movies__loading--spinner"></i>'
     }
 } 
 
